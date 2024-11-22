@@ -1,0 +1,17 @@
+    1  sudo /media/user/VBox_Gas_6.1.4/VboxLinuxAdditions.run
+    2  echo -e "Собаки\nКошки\nХомяки" > Домашние_животные
+    3  echo -e "Лошади\nВерблюды\nОсли" > Вьючные_животные
+    4  cat Домашние_животные Вьючные_животные > Объединённый_файл
+    5  cat Объединённый_файл
+    6  mv Объединённый_файл Друзья_человека
+    7  mkdir Папка_для_файла
+    8  mv Друзья_человека Папка_для_файла/
+    9  wget https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb
+   10  sudo dpkg -i mysql-apt-config_0.8.26-1_all.deb
+   11  sudo apt update
+   12  sudo apt install mysql-client
+   13  wget https://ftp.us.debian.org/debian/pool/mail/h/htop/htop_3.2.1-1_amd64.deb
+   14  wget --no-check-certificate https://ftp.us.debian.org/debian/pool/mail/h/htop/htop_3.2.1-1_amd64.deb
+   15  sudo dpkg -i htop_3.2.1-1_amd64.deb
+   16  sudo dpkg -r htop
+   17  history > history.txt
